@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+* {
+	font-family: 'Poiret One';
+	font-size: 24px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	padding: 1em 1em;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.main-header {
+	position: sticky;
+	top: 0;
+	background-color: white;
+    z-index: 1;
+}
+
+.main-header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    padding: 1em 2em;
+}
+
+.header-nav,
+.header-nav ul, 
+.header-nav li {
+	display: inline-block;
+}
+
+.header-nav a,
+.header-logo a {
+	text-decoration: none;
+	color: black;
+}
+
+.header-logo a {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.header-nav-toggle {
+    width: 1.5em;
+    height: 1.5em;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.header-nav-toggle .bar {
+    width: 100%;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: none;
+}
+
+.header-nav ul {
+	padding-inline-start: 0;
+	margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.header-nav a {
+	border: 1px solid grey;
+	padding: 0.5em;
+	margin: 0.25em;
+}
+
+.header-nav a:hover {
+	border: 1px solid black;
+	background-color: lightgrey;
+}
+
+.section {
+    scroll-margin-top: 82px;
+    position: relative;
+}
+
+.section-header {
+	text-align: center;
+	margin-block-start: 0;
+    margin-block-end: 0;
+	font-size: 2em;
+    position: relative;
+}
+
+.about-outer-container {
+    position: relative;
+}
+
+.about-inner-container {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 12px 24px;
+    margin: 12px;
+}
+
+#about-video-background { 
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.chef-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    margin-top: 48px;
+}
+
+.chef-img-container {
+    flex: 1 1 300px;
+}
+
+.chef-text {
+    flex: 1 1 300px;
+    padding: 1em 1em;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+
+.chef-img {
+    object-fit: fill;
+    width: 100%;
+}
+
+.menu-category {
+    margin: 2em 0;
+}
+
+.menu-category-header {
+    margin-block-start: 1.5em;
+    margin-block-end: 1.5em;
+}
+
+.menu-item-name, .menu-item-price, .menu-item-description {
+    margin-block-start: 0;
+    margin-block-end: 0.25em;
+}
+
+.menu-item {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+
+.menu-item-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.menu-item-line {
+    flex: 1 1 50px;
+    height: 1px;
+    background-color: lightgrey;
+}
+
+
+
+
+
+
+
+/*
+
+TO DO:
+- change logo
+- add underline to link
+- add background videos/images
+- add menu items
+- add reservation form (try to include date, etc.)
+- contact: 	-show google maps
+			- show contact information as well (include icons)
+			- include social media icons
+
+*/
+
+
+.getting-here-main {
+    padding: 1.5em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+.getting-here-information-outer {
+    padding: 1em 1em;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    flex: 1 1 300px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.getting-here-map-container {
+    flex: 1 1 300px;
+    height: 15em;
+}
+
+.getting-here-map {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-main {
+    padding: 1.5em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+.contact-form-container {
+    flex: 1 1 300px;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.contact-form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    margin: 1em 0;
+}
+
+.input-container {
+    width: 100%;
+}
+
+.form-input {
+    width: 100%;
+    min-width: 175px;
+}
+
+.message-container {
+    margin: 1em 0;
+}
+
+.form-input:focus {
+    background-color: #EEE;
+}
+
+
+.form-submit-btn {
+    cursor: pointer;
+}
+
+.contact-form {
+    flex: 1 1 300px;
+}
+
+.contact-details-outer {
+    flex: 1 1 300px;
+    padding: 1em 1em;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-footer {
+    padding: 12px;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+@media (max-width: 900px) {
+    * {
+        font-size: 20px;
+    }
+
+    .header-nav-toggle {
+        display: flex;
+    }
+
+    .header-nav-toggle .bar {
+        display: block;
+    }
+
+    .section {
+        scroll-margin-top: 50px;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
+    
+    .header-nav {
+        width: 100%;
+        display: none;
+    }
+
+    .header-nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header-nav li {
+        text-align: center;
+        padding: .5em;
+    }
+
+    .header-nav li:hover {
+        background-color: lightgrey;
+    }
+
+    .header-nav a {
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-nav a:hover {
+        border: none;
+        background-color: transparent;
+    }
+
+    .header-nav.active {
+        display: flex;
+    }
+
+    .main-header .container {
+        padding: 0.5em 1.5em;
+    }
+}
