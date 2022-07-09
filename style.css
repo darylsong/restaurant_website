@@ -335,6 +335,9 @@ TO DO:
         border: none;
         padding: 0;
         margin: 0;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
     }
 
     .header-nav a:hover {
@@ -348,5 +351,10 @@ TO DO:
 
     .main-header .container {
         padding: 0.5em 1.5em;
+    }
+
+    .contact-form-row {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
