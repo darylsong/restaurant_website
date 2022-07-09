@@ -357,5 +357,6 @@ TO DO:
     .contact-form-row {
         display: flex;
         flex-wrap: wrap;
+        gap: 1em;
     }
 }
